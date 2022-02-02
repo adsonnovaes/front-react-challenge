@@ -1,0 +1,17 @@
+#container-class {
+  // background: red;
+  width: 70%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  .header-title {
+    margin-top: 2rem;
+    line-height: 3rem;
+
+    h1 {
+      color: var(--title100);
+      font-family: Roboto, sans-serif;
+    }
+  }
+}

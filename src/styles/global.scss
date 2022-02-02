@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #F7F6FB;
+
+  --title100: #575757; // title Curso
+  --title90: #919193; // breadcrumb active page and title card
+  --title80: #A7A6A9; // titulo da trilha do curso e porcentagem de progresso
+  --title70: #D8D9DE; // subtitulos, textos pequenos
+
+  --decoration: #B8B8B8;
+
+  --white: #FFFFFF;
+  --green: #67B093;
+  --red: #e74a3b;
+}
+
+body {
+  background: var(--background);
+}
+
+// body,
+// input,
+// button,
+// textarea {
+//   font: 400 1rem "Roboto", sans-serif;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+
+// ul {
+//   list-style: none;
+// }
+
+// button {
+//   cursor: pointer;
+// }
+
+// body {
+//   overflow-y: hidden;
+// }
+
+// .wrapper {
+//   display: flex;
+
+//   main {
+//     flex: 1;
+//     overflow-y: scroll;
+//   }
+
+//   @media (max-width: 589px) {
+//     .sidebar-container {
+//       display: none;
+//     }
+//   }
+// }

@@ -1,6 +1,9 @@
+import { Router } from './routes';
+import './styles/global.scss';
+
 function App() {
   return (
-    <h1>Hello</h1>
+    <Router/>
   );
 }
 
