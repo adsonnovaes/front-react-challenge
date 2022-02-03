@@ -10,10 +10,13 @@ type Props = {
 export function BannerClass({ urlImg, title }: Props) {
   return (
     <div id="banner-container">
+      <div id="teste"/>
+
       <img
         src={urlImg}
         alt="Banner do Curso"
       />
+
 
       <div id="info-banner">
         <h2>{title}</h2>

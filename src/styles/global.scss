@@ -5,22 +5,30 @@
 }
 
 :root {
-  --background: #F7F6FB;
+  --background: #f7f6fb;
 
   --title100: #575757; // title Curso
   --title90: #919193; // breadcrumb active page and title card
-  --title80: #A7A6A9; // titulo da trilha do curso e porcentagem de progresso
-  --title70: #D8D9DE; // subtitulos, textos pequenos
+  --title80: #a7a6a9; // titulo da trilha do curso e porcentagem de progresso
+  --title70: #d8d9de; // subtitulos, textos pequenos
 
-  --decoration: #B8B8B8;
+  --decoration: #b8b8b8;
 
-  --white: #FFFFFF;
-  --green: #67B093;
+  --white: #ffffff;
+  --green: #67b093;
   --red: #e74a3b;
 }
 
 body {
   background: var(--background);
+}
+
+h1,
+h2,
+p,
+span,
+input {
+  font-family: Roboto, sans-serif;
 }
 
 // body,
@@ -33,7 +41,6 @@ body {
 // a {
 //   text-decoration: none;
 // }
-
 
 // ul {
 //   list-style: none;

@@ -1,0 +1,19 @@
+input {
+  color: var(--title90);
+  background: var(--white);
+
+  border: 1px solid var(--title70);
+
+  font-weight: 400;
+  font-size: 1rem;
+
+  padding: 0.6rem 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+
+  transition: border 0.1s;
+
+  &:focus {
+    border: 1px solid var(--green);
+  }
+}
