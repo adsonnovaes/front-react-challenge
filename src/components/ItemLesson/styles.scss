@@ -36,5 +36,21 @@
         margin-right: 2rem;
       }
     }
+
+    @media(max-width:600px) {
+      // flex-direction: column;
+      #button-title {
+        text-align: left;
+        span {
+          display: none;
+        }
+      }
+
+      #steps-icon {
+        span {
+          display: none;
+        }
+      }
+    }
   }
 }

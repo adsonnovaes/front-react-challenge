@@ -29,12 +29,21 @@
       justify-content: center;
 
       border: 1px solid var(--title70);
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
 
     #title-activity {
       h2,
       span {
         color: var(--white);
+      }
+      @media (max-width: 425px) {
+        h2{
+          font-size: 1rem;
+        }
       }
     }
   }

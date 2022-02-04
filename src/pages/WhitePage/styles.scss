@@ -27,4 +27,17 @@
       background-color: rgb(68, 156, 130);
     }
   }
+
+  @media (max-width: 508px) {
+    width: 90%;
+    height: 40rem;
+
+    #white-page {
+      width: 80%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

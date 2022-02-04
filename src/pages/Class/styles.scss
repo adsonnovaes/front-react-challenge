@@ -24,6 +24,9 @@
     span {
       color: var(--title80);
     }
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   #container-course {
@@ -41,6 +44,21 @@
       span {
         color: var(--title90);
         line-height: 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+
+      > div {
+        span {
+          line-height: 0;
+        }
+      }
+
+      input {
+        margin-top: 2rem;
+        width: 100%;
       }
     }
   }
