@@ -1,4 +1,5 @@
 import { BannerClass } from "../../components/BannerClass";
+import { Breadcrumb } from "../../components/Breadcrumb";
 import { Input } from "../../components/Input";
 import { LessonCardList } from "../../components/LessonCardList";
 import { NextActivity } from "../../components/NextActivity";
@@ -16,7 +17,7 @@ export function Class() {
       <div className="header-title">
         <h1>Curso</h1>
 
-        <h3>breadcrumb</h3>
+        <Breadcrumb/>
       </div>
 
       <BannerClass

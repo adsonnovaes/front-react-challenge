@@ -23,10 +23,6 @@
     margin-bottom: 2rem;
   }
 
-  // &:hover {
-  //   background-color: var(--title60);
-  // }
-
   &[open] {
     .title:after {
       content: "\276F";

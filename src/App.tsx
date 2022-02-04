@@ -1,9 +1,12 @@
+import { ProgressContextProvider } from './contexts/ProgressContext';
 import { Router } from './routes';
 import './styles/global.scss';
 
 function App() {
   return (
-    <Router/>
+    <ProgressContextProvider>
+      <Router />
+    </ProgressContextProvider>
   );
 }
 

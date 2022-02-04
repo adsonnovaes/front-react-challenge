@@ -1,0 +1,43 @@
+#breadcrumb-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  nav {
+    width: 100%;
+  }
+
+  ol {
+    display: flex;
+    .active {
+      color: var(--title100);
+    }
+    li {
+      height: 1rem;
+      list-style: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: var(--title80);
+      margin-right: 0.2rem;
+
+      font-weight: 500;
+
+      .list-link:not(.active) {
+        color: var(--title80);
+      }
+
+      & + li:before {
+        content: "\276F";
+        transform: translateY(0.08rem);
+        font-size: 0.7rem;
+        margin-right: 0.2rem;
+      }
+
+      &:last-child a {
+        text-decoration: none;
+        cursor: default;
+      }
+    }
+  }
+}

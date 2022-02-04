@@ -3,8 +3,12 @@ import './styles.scss';
 import { FaBookReader } from 'react-icons/fa';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import useProgress from '../../hooks/useProgress';
 
 export function NextActivity() {
+
+  const { steps } = useProgress();
+
   return (
     <div id="container-activity">
       <div id="content-title-icon">
@@ -17,7 +21,7 @@ export function NextActivity() {
 
         <div id="title-activity">
           <h2>Próxima atividade</h2>
-          <span>546 passos</span>
+          <span>{steps} passo(s)</span>
         </div>
       </div>
 

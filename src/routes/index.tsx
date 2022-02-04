@@ -19,6 +19,18 @@ export function Router() {
           <WhitePage />
         }
         />
+        <Route path="/Academia" element={
+          <WhitePage />
+        }
+        />
+        <Route path="/Escola" element={
+          <WhitePage />
+        }
+        />
+        <Route path="/Programa-treino" element={
+          <WhitePage />
+        }
+        />
       </Routes>
     </BrowserRouter>
   )
