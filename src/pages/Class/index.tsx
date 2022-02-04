@@ -1,20 +1,50 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 import { BannerClass } from "../../components/BannerClass";
 import { Breadcrumb } from "../../components/Breadcrumb";
 import { Input } from "../../components/Input";
 import { LessonCardList } from "../../components/LessonCardList";
-import { Modal } from "../../components/Modal";
 import { NextActivity } from "../../components/NextActivity";
 import { NotFound } from "../../components/NotFound";
 import { ProgressBar } from "../../components/ProgressBar";
-import useProgress from "../../hooks/useProgress";
+
+import db from '../../data/fakeData.json';
 
 import './styles.scss';
 
-export function Class() {
+export type Item = {
+  id: string;
+  buttonTitle: string;
+  title: string;
+  steps: number;
+}
 
-  // const urlImg = 'https://1.bp.blogspot.com/-vmumZoALtkg/YUFnFPXFspI/AAAAAAABGjM/sZdA_IBhI0ULXfnyB9HPaB08xBiFf_-0QCLcBGAsYHQ/s2560/Papel%2Bde%2BParede%2BPC%2BTumblr.jpg';
-  
+export type LessonProps = {
+  id: string;
+  title: string;
+  items: Item[];
+}
+
+export function Class() {
+  const [data, setData] = useState<LessonProps[]>(db);
+  const [search, setSearch] = useState('');
+
+  useEffect(() => {
+    let filtered: LessonProps[];
+
+    if (search === "") {
+      filtered = db;
+    } else {
+      let lowerSearch = search.toLowerCase();
+
+      filtered = db.filter(lesson => {
+        return lesson.title.toLowerCase().includes(lowerSearch);
+      });
+    }
+
+    setData(filtered);
+  }, [search]);
+
   return (
     <div id="container-class">
       <div className="header-title">
@@ -41,12 +71,17 @@ export function Class() {
 
         <Input
           placeholder="Pesquisar por curso"
+          value={search}
+          onChange={event => setSearch(event.target.value)}
         />
       </div>
 
-      {/* <NotFound/> */}
-      <LessonCardList />
+      {data.length <= 0
+        ? <NotFound />
+        : <LessonCardList
+          data={data}
+        />
+      }
     </div>
-
   );
 }

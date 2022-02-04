@@ -1,9 +1,11 @@
-import './styles.scss';
+import { Link } from 'react-router-dom';
 
 import { FaBookReader } from 'react-icons/fa';
 import { FiChevronRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+
 import useProgress from '../../hooks/useProgress';
+
+import './styles.scss';
 
 export function NextActivity() {
 

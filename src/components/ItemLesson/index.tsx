@@ -4,21 +4,28 @@ import { BsCircleFill } from 'react-icons/bs';
 import './styles.scss';
 import { useState } from 'react';
 import { InputRadio } from '../InputRadio';
+import { Item } from '../../pages/Class';
 
-export function ItemLesson() {
+type Props = {
+  item: Item;
+}
+
+export function ItemLesson({ item }: Props) {
 
   return (
     <div id="item-container">
-      <InputRadio />
+      <InputRadio
+        steps={item.steps}
+      />
 
       <div id="center-items">
         <div id="button-title">
-          <span>Leitura</span>
-          <Link to="/">Como funciona o em Marketin digital</Link>
+          <span>{item.buttonTitle}</span>
+          <Link to="/">{item.title}</Link>
         </div>
 
         <div id="steps-icon">
-          <span>Passos 100</span>
+          <span>Passos {item.steps}</span>
           <FiChevronRight
             color="#a7a6a9"
             size={24}

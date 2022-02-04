@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Caracterização da cultura empresarial",
+    "items": [
+      {
+        "id": "1",
+        "buttonTitle": "Texto descritivo",
+        "title": "Como implantar uma cultura empresarial",
+        "steps": 100
+      },
+      {
+        "id": "2",
+        "buttonTitle": "Imagem",
+        "title": "Como criar uma empresa na visão empresarial",
+        "steps": 150
+      },
+      {
+        "id": "3",
+        "buttonTitle": "Vídeo",
+        "title": "Como planejar a divulgação nas redes",
+        "steps": 300
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Benefícios do marketing para a cultura empresarial",
+    "items": [
+      {
+        "id": "1",
+        "buttonTitle": "Vídeo",
+        "title": "Como implantar o  marketing",
+        "steps": 300
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Implementando a cultura junto aos parceiros de trabalho",
+    "items": [
+      {
+        "id": "1",
+        "buttonTitle": "Texto descritivo",
+        "title": "Como implantar o  marketing",
+        "steps": 150
+      }
+    ]
+  }
+]

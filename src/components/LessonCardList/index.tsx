@@ -1,28 +1,29 @@
+import { LessonProps } from '../../pages/Class';
 import { ItemLesson } from '../ItemLesson';
+
 import './styles.scss';
 
-export function LessonCardList() {
+type Props = {
+  data: LessonProps[];
+}
+
+export function LessonCardList({ data }: Props) {
+
   return (
     <>
-      <details className="collapse">
-        <summary className="title">
-          Caracterização da cultura empresarial
-        </summary>
-        <ItemLesson/>
-        <ItemLesson/>
-        <ItemLesson/>
-        <ItemLesson/>
-      </details>
-
-      <details className="collapse">
-        <summary className="title">Titulo</summary>
-        <div className="description">Texto</div>
-      </details>
-
-      <details className="collapse">
-        <summary className="title">Titulo</summary>
-        <div className="description">Texto</div>
-      </details>
+      {data.map(lesson => (
+        <details className="collapse" key={lesson.id}>
+          <summary className="title">
+            {lesson.title}
+          </summary>
+          {lesson.items.map(item => (
+            <ItemLesson
+              key={item.id}
+              item={item}
+            />
+          ))}
+        </details>
+      ))}
     </>
   )
 }
