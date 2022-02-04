@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { LessonProps } from '../../pages/Class';
 import { ItemLesson } from '../ItemLesson';
 
@@ -8,6 +9,7 @@ type Props = {
 }
 
 export function LessonCardList({ data }: Props) {
+  // const [idLesson, setIdLesson] = useState('');
 
   return (
     <>
@@ -20,6 +22,7 @@ export function LessonCardList({ data }: Props) {
             <ItemLesson
               key={item.id}
               item={item}
+              idLesson={lesson.id}
             />
           ))}
         </details>

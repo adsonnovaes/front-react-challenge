@@ -8,8 +8,8 @@ type ProgressContextData = {
   steps: number;
   progress: number;
   classOmdb: Omdb;
-  addingSteps: (steps: number) => void;
-  removeSteps: (steps: number) => void;
+  addingSteps: (steps: number, idLesson: string, idItem: string) => void;
+  removeSteps: (steps: number, idLesson: string, idItem: string) => void;
 }
 
 export const ProgressContext = createContext({} as ProgressContextData);
@@ -80,15 +80,29 @@ export function ProgressContextProvider({ children }: ProgressContextProviderPro
     setProgress(newProgress);
   }
 
-  function addingSteps(step: number) {
+  function updateStatus(idLesson: string, idItem: string) {
+    let indexLesson = db.findIndex(lesson => {
+      return lesson.id === idLesson;
+    });
+
+    let indexItem = db[indexLesson].items.findIndex(item => {
+      return item.id === idItem
+    });
+    
+    db[indexLesson].items[indexItem].completed = !db[indexLesson].items[indexItem].completed;
+  }
+
+  function addingSteps(step: number, idLesson: string, idItem: string) {
     let newSteps = steps + step;
     updateProgress(newSteps);
+    updateStatus(idLesson, idItem);
     setSteps(newSteps);
   }
 
-  function removeSteps(step: number) {
+  function removeSteps(step: number, idLesson: string, idItem: string) {
     let newSteps = steps - step;
     updateProgress(newSteps);
+    updateStatus(idLesson, idItem);
     setSteps(newSteps);
   }
 

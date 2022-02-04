@@ -7,19 +7,22 @@
         "id": "1",
         "buttonTitle": "Texto descritivo",
         "title": "Como implantar uma cultura empresarial",
-        "steps": 100
+        "steps": 100,
+        "completed": false
       },
       {
         "id": "2",
         "buttonTitle": "Imagem",
         "title": "Como criar uma empresa na visão empresarial",
-        "steps": 150
+        "steps": 150,
+        "completed": false
       },
       {
         "id": "3",
         "buttonTitle": "Vídeo",
         "title": "Como planejar a divulgação nas redes",
-        "steps": 300
+        "steps": 300,
+        "completed": false
       }
     ]
   },
@@ -31,7 +34,8 @@
         "id": "1",
         "buttonTitle": "Vídeo",
         "title": "Como implantar o  marketing",
-        "steps": 300
+        "steps": 300,
+        "completed": false
       }
     ]
   },
@@ -43,7 +47,8 @@
         "id": "1",
         "buttonTitle": "Texto descritivo",
         "title": "Como implantar o  marketing",
-        "steps": 150
+        "steps": 150,
+        "completed": false
       }
     ]
   }

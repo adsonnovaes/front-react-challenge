@@ -8,20 +8,24 @@ import { Item } from '../../pages/Class';
 
 type Props = {
   item: Item;
+  idLesson: string;
 }
 
-export function ItemLesson({ item }: Props) {
+export function ItemLesson({ item, idLesson }: Props) {
 
   return (
     <div id="item-container">
       <InputRadio
         steps={item.steps}
+        idLesson={idLesson}
+        idItem={item.id}
+        completed={item.completed}
       />
 
       <div id="center-items">
         <div id="button-title">
           <span>{item.buttonTitle}</span>
-          <Link to="/">{item.title}</Link>
+          <Link to="/page-white">{item.title}</Link>
         </div>
 
         <div id="steps-icon">

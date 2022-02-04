@@ -17,6 +17,7 @@ export type Item = {
   buttonTitle: string;
   title: string;
   steps: number;
+  completed: boolean;
 }
 
 export type LessonProps = {
