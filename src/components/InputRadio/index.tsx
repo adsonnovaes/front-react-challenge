@@ -10,7 +10,12 @@ type Props = {
   completed: boolean;
 }
 
-export function InputRadio({ steps, idLesson, idItem, completed }: Props) {
+export function InputRadio({
+  steps,
+  idLesson,
+  idItem,
+  completed
+}: Props) {
 
   const [isChecked, setIsChecked] = useState(false);
   const { addingSteps, removeSteps } = useProgress();

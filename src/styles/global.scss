@@ -7,17 +7,16 @@
 :root {
   --background: #f7f6fb;
 
-  --title100: #575757; // title Curso
-  --title90: #919193; // breadcrumb active page and title card
-  --title80: #a7a6a9; // titulo da trilha do curso e porcentagem de progresso
-  --title70: #d8d9de; // subtitulos, textos pequenos
-  --title60: #e9eaec; // subtitulos, textos pequenos
+  --title100: #575757;
+  --title90: #919193;
+  --title80: #a7a6a9;
+  --title70: #d8d9de;
+  --title60: #e9eaec;
 
   --decoration: #b8b8b8;
 
   --white: #ffffff;
   --green: #67b093;
-  --red: #e74a3b;
 }
 
 body {
@@ -54,37 +53,3 @@ a {
     text-decoration: underline;
   }
 }
-
-// body,
-// input,
-// button,
-// textarea {
-//   font: 400 1rem "Roboto", sans-serif;
-// }
-
-// ul {
-//   list-style: none;
-// }
-
-// button {
-//   cursor: pointer;
-// }
-
-// body {
-//   overflow-y: hidden;
-// }
-
-// .wrapper {
-//   display: flex;
-
-//   main {
-//     flex: 1;
-//     overflow-y: scroll;
-//   }
-
-//   @media (max-width: 589px) {
-//     .sidebar-container {
-//       display: none;
-//     }
-//   }
-// }

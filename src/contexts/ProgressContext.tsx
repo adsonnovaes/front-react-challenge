@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useContext, useEffect } from 'react';
+import { createContext, useState, ReactNode, useEffect } from 'react';
 import { LessonProps } from '../pages/Class';
 import { classCurrent, Omdb } from '../services/resources/omdb';
 
@@ -88,7 +88,7 @@ export function ProgressContextProvider({ children }: ProgressContextProviderPro
     let indexItem = db[indexLesson].items.findIndex(item => {
       return item.id === idItem
     });
-    
+
     db[indexLesson].items[indexItem].completed = !db[indexLesson].items[indexItem].completed;
   }
 

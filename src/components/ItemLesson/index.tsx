@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi';
-import { BsCircleFill } from 'react-icons/bs';
-import './styles.scss';
-import { useState } from 'react';
+
 import { InputRadio } from '../InputRadio';
 import { Item } from '../../pages/Class';
+
+import './styles.scss';
 
 type Props = {
   item: Item;
@@ -29,7 +29,7 @@ export function ItemLesson({ item, idLesson }: Props) {
         </div>
 
         <div id="steps-icon">
-          <span>Passos {item.steps}</span>
+          <span>{item.steps} Passos</span>
           <FiChevronRight
             color="#a7a6a9"
             size={24}

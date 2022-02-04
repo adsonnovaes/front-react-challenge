@@ -10,19 +10,22 @@ type ModalParams = {
   data: Omdb;
   isOpen: boolean;
   setVisibility: () => void,
-  handleConfirmed?: () => void,
   children?: ReactNode,
 }
 
 ReactModal.setAppElement('#root');
-export function Modal({ data, isOpen, setVisibility, handleConfirmed, children }: ModalParams) {
+export function Modal({
+  data,
+  isOpen,
+  setVisibility,
+  children
+}: ModalParams) {
 
   return (
     <ReactModal
       isOpen={isOpen}
       onRequestClose={setVisibility}
       className="Modal"
-    // overlayClassName="Overlay"
     >
       <div className="header-container">
         <div id="header-title">

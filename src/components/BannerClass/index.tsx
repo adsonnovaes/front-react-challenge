@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useProgress from '../../hooks/useProgress';
+
 import { Button } from '../Button';
 import { Modal } from '../Modal';
 
@@ -13,7 +14,7 @@ export function BannerClass() {
 
   return (
     <div id="banner-container">
-      <div id="teste" />
+      <div id="opacity" />
 
       <img
         src={classOmdb.Poster}
@@ -36,7 +37,6 @@ export function BannerClass() {
         setVisibility={() => {
           setIsVisibleModal(false)
         }}
-      // handleConfirmed={() => handleDeleteCompany(idCompany)}
       >
         {classOmdb.Title}
       </Modal>

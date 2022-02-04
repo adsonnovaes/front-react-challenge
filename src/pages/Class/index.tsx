@@ -67,7 +67,7 @@ export function Class() {
       <div id="container-course">
         <div>
           <h2>Thilha do Curso</h2>
-          <span>Veja em detalhes todos os conteudos que você irá aprender</span>
+          <span>Veja em detalhes todos os conteúdos que você irá aprender</span>
         </div>
 
         <Input
