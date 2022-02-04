@@ -1,0 +1,40 @@
+#item-container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 1rem;
+
+  #center-items {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.75rem 0 0.75rem 2rem;
+
+    #button-title {
+      span {
+        background: var(--green);
+        padding: 0.25rem;
+        border-radius: 0.2rem;
+        color: var(--white);
+      }
+
+      a {
+        margin-left: 0.5rem;
+      }
+    }
+
+    #steps-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        color: var(--title90);
+        margin-right: 2rem;
+      }
+    }
+  }
+}

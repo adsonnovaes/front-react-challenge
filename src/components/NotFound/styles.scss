@@ -1,0 +1,17 @@
+#not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  padding-top: 6rem;
+
+  span {
+    color: var(--green);
+    margin-top: 2rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

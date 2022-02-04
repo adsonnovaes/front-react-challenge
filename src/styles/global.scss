@@ -11,6 +11,7 @@
   --title90: #919193; // breadcrumb active page and title card
   --title80: #a7a6a9; // titulo da trilha do curso e porcentagem de progresso
   --title70: #d8d9de; // subtitulos, textos pequenos
+  --title60: #e9eaec; // subtitulos, textos pequenos
 
   --decoration: #b8b8b8;
 
@@ -27,8 +28,30 @@ h1,
 h2,
 p,
 span,
-input {
+input,
+summary,
+a {
   font-family: Roboto, sans-serif;
+}
+
+details {
+  summary {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: var(--title90);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // body,
@@ -36,10 +59,6 @@ input {
 // button,
 // textarea {
 //   font: 400 1rem "Roboto", sans-serif;
-// }
-
-// a {
-//   text-decoration: none;
 // }
 
 // ul {

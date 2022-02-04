@@ -1,6 +1,8 @@
 import { BannerClass } from "../../components/BannerClass";
 import { Input } from "../../components/Input";
+import { LessonCardList } from "../../components/LessonCardList";
 import { NextActivity } from "../../components/NextActivity";
+import { NotFound } from "../../components/NotFound";
 import { ProgressBar } from "../../components/ProgressBar";
 
 import './styles.scss';
@@ -40,6 +42,9 @@ export function Class() {
           placeholder="Pesquisar por curso"
         />
       </div>
+
+      {/* <NotFound/> */}
+      <LessonCardList/>
     </div>
 
   );
